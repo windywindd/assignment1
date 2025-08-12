@@ -13,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/auth', require('./routes/authRoutes'));
 //app.use('/api/tasks', require('./routes/taskRoutes'));
+const jobRoutes = require('./routes/jobRoutes');
+app.use('/api/jobs', jobRoutes);
+
 
 // Export the app object for testing
 if (require.main === module) {
