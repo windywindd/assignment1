@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import axiosInstance from '../axiosConfig';
-import { useAuth } from '../context/AuthContext';
+// Remove this import if you remove the next line
+// import { useAuth } from '../context/AuthContext';
 
 const JobPosting = () => {
-  const { user } = useAuth(); // get logged-in user info if needed
+  // Remove this line if you don't use user
+  // const { user } = useAuth();
+
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [message, setMessage] = useState('');
