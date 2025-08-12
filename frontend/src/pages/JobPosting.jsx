@@ -15,7 +15,7 @@ const JobPosting = () => {
     e.preventDefault();
 
     try {
-      const { data } = await axiosInstance.post('/api/jobs', { title, description });
+      await axiosInstance.post('/api/jobs', { title, description });
       setMessage('Job posted successfully!');
       setTitle('');
       setDescription('');
