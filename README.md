@@ -1,4 +1,4 @@
-
+<!-- 
 **Assessment 1 (Total Marks **20**)**
 
 Assignment: **Software requirements analysis and design (**Full-Stack CRUD Application Development with DevOps Practices**)**
@@ -91,4 +91,20 @@ We will send you an email to choose a Real-World project. If you face any diffic
 * Clarity and completeness of Jira board and SysML models.
 * Adherence to Git best practices and practical contributions.
 * Successful implementation, deploymentand CI/CD pipeline.
-* Problem-solving skills and the ability to go beyond basic requirements.
+* Problem-solving skills and the ability to go beyond basic requirements. -->
+**Online Recruitment and Assessment project**
+ required technologies:
+Node.js (v18 or above)
+npm or yarn
+MongoDB
+Git
+GitHub account
+Jira account
+
+**Installation**
+ install dependencies: npm install or yarn install
+
+**Environment**
+⚠️ You must provide your own MongoDB URI in the .env file to run this project.
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
+

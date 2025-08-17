@@ -11,12 +11,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <nav className="bg-black text-white p-4 flex justify-between items-center">
       <Link to="/" className="text-2xl font-bold">Online Recruitment and Assessment System</Link>
       <div>
         {user ? (
           <>
-            <Link to="/tasks" className="mr-4">CRUD</Link>
+            {/* <Link to="/tasks" className="mr-4">CRUD</Link> */}
             <Link to="/jobs" className="mr-4">Jobs</Link>
             <Link to="/post-job" className="mr-4">Post New Job</Link>
             <Link to="/profile" className="mr-4">Profile</Link>

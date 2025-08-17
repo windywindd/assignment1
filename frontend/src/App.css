@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url('/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps background still when scrolling */
+  margin: 0;
+  font-family: sans-serif;
+}

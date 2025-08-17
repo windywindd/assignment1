@@ -12,8 +12,14 @@ export const AuthProvider = ({ children }) => {
     // Save token for axios interceptor
     localStorage.setItem('token', data.token);
 
-    // Save user info in state (customize based on your response shape)
-    setUser({ id: data.id, name: data.name, email: data.email });
+    // Save user info in state, including role
+    setUser({
+      id: data.id,
+      name: data.name,
+      email: data.email,
+      role: data.role, // <-- store role here
+      token: data.token, // optional, if you want to keep token in context
+    });
   };
 
   // Optional logout function clears token & user

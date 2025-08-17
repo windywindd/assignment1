@@ -6,7 +6,7 @@ import Profile from './pages/Profile';
 import Tasks from './pages/Tasks';
 import JobPosting from './pages/JobPosting';
 import JobList from './pages/JobList';
-
+import Home from './pages/Home';
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/post-job" element={<JobPosting />} />
         <Route path="/jobs" element={<JobList />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
